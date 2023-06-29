@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.geral-container{
+  width: 100%;
+  height: 100vh;
+  background-color: #FF6B57;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-image{
+  width: 700px;
+  position: absolute;
+}
+
+.main-container{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas: 'title' 'pokedex';
+  align-items: center;
+  justify-items: center;
+}
+.title-container{
+  grid-area: title;
+}
+.title{
+  font-size: 58px;
+  color: #FFff;
+  -webkit-text-stroke: 3px #000;
+}
+.content-container{
+  grid-area: pokedex;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: '. tela cards .';
+}
+.body-container{
+  grid-area: cards;
+  background-color: rgba(255, 107, 87, 0.9);
+  border: solid 5px #000;
+  width: 100%;
+  height: 95%;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 4fr 0.5fr;
+  grid-template-areas: ". buttons ."
+                       ". cardcontainer ."
+                       ". . .";
+  align-items: center;
+  justify-items: center;
+}
+.buttons-container{
+  grid-area: buttons;
+  width: 100%;
+  height: 100%;
+}
+.card-container{  
+  grid-area: cardcontainer;
+  border: solid 5px #000;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+  
+  width: 95%;
+  height: 95%;
+  padding-left: 9px;
+  padding-right: 40px;
+}
+.pokedex-container{
+  grid-area: tela;
+  
+  width: 100%;
+  height: 95%;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: solid 3px #000;
+  border-radius: 20px 0px 0px 20px;
+  background-color: rgb(50, 50, 50);
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 4fr 1fr;
+  grid-template-areas: "tela tela tela tela"
+                       ". esq dir .";  
+  align-items: center;
+  justify-items: center;
+
+}
+.tela{
+  grid-area: tela;
+  width: 100%;
+  height: 85%;
+  border: solid 2px #000;
+  background-color: #FFf;
+}
+.botao-dir{
+  grid-area: dir; 
+  padding-left: 10px;
+}
+.botao-esq{
+  grid-area: esq;
+  padding-right: 10px;
+}

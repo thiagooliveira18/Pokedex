@@ -1,0 +1,38 @@
+.pokemon-container{
+    width: 150px;
+    height: 150px;
+    background-color: rgba(42, 42, 42, 0.7);
+    border: solid 2px #000;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: "image"
+                         "text";
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s linear;
+}
+.pokemon-container:hover{    
+    background-color: rgba(42, 42, 42, 0.9);
+    font-size: 18px;    
+}
+
+.image{
+    width: 90px;
+    height: 90px;
+    grid-area: image;
+}
+.pokemon-container:hover > .image{
+    width: 100px;
+    height: 100px;
+}
+
+.nome-container{
+    grid-area: text;
+}
+.nome{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    grid-area: text;
+}
