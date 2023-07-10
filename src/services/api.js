@@ -8,6 +8,7 @@ const apiImagem = axios.create({
     baseURL: 'https://pokeapi.co/api/v2/pokemon/',
 });
 
+
 const APIs = {
     api,
     apiImagem

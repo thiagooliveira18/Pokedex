@@ -8,7 +8,7 @@ import Fundo from './assets/pokemon.png';
 import Pokemon from './components/Pokemon/index';
 import ArrowButton from './components/ArrowButton';
 import Search from './components/Search';
-
+import FilterButton from './components/FilterButton';
 
 /*
 Idéias:
@@ -47,48 +47,48 @@ function App() {
   }
 
   return (
-    <>
-      <Search />
-    </>
-    // <div className='geral-container'>
-    //   <img src={Fundo} alt="Imagem de Fundo" className='background-image' />
-    //   <div className="main-container">
-    //     <div className='title-container'>
-    //       <h1 className="title">Pokedex</h1>
-    //     </div>
-    //     <div className='content-container'>
-    //       <div className='pokedex-container'>
-    //         <div className='tela'>
-              
-    //         </div>
-    //         <div className='botao-esq' onClick={() => {handleBackPage()}}>
-    //           <ArrowButton
-    //             isRight={false}                  
-    //           />
-    //         </div>
-    //         <div className='botao-dir' onClick={() => {handleNextPage()}}>
-    //           <ArrowButton 
-    //             isRight={true}                 
-    //           />
-    //         </div>
-            
-            
-    //       </div>
-    //       <div className="body-container">
-    //         <div className="buttons-container">
 
-    //         </div>
-    //         <div className="card-container">
-    //           {
-    //             pokemon.map(pokemonAtual => {
-    //               return <Pokemon pokemon={pokemonAtual} />
-    //             })
-    //           }         
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
+    <div className='geral-container'>
+      <img src={Fundo} alt="Imagem de Fundo" className='background-image' />
+      <div className="main-container">
+        <div className='title-container'>
+          <h1 className="title">Pokedex</h1>
+        </div>
+        <div className='content-container'>
+          <div className='pokedex-container'>
+            <div className='tela'>
+              
+            </div>
+            <div className='botao-esq' onClick={() => {handleBackPage()}}>
+              <ArrowButton
+                isRight={false}                  
+              />
+            </div>
+            <div className='botao-dir' onClick={() => {handleNextPage()}}>
+              <ArrowButton 
+                isRight={true}                 
+              />
+            </div>
+            
+            
+          </div>
+          <div className="body-container">
+            <div className="buttons-container">
+              <div className="search-area">
+                <Search />
+              </div>
+            </div>
+            <div className="card-container">
+              {
+                pokemon.map(pokemonAtual => {
+                  return <Pokemon pokemon={pokemonAtual} />
+                })
+              }         
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
