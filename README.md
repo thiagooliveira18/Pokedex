@@ -25,7 +25,7 @@ Foram utilizados os frameworks React.js e Axios para o desenvolvimento do projet
 The purpose of this project is to study and practice programing skills.
 ## 🧰 Resources
 The frameworks React.js and Axios were used for the development of the project and the API PokéApi (https://pokeapi.co) was used.
-## 🔨 Funcionalidades
+## 🔨 Functionalities
 `Pokémons List` Within the site, a list of pokémons is generated that has several tabs with several different pokémons.<br />
 `Search Area` Field where searches can be made for certain Pokemon that the user wants to find.<br />
 `Voice Button` Button where you enable the user's microphone to speak the pokémon you want.<br />
